@@ -29,14 +29,24 @@
 				background:#000;
 				color:#fff;
 				text-align:center;
+				position:relative;
+				z-index:1;
 				
 			}
+			.menu ul ul{	
+				position:absolute;
+				display:none;
+				z-index:2;
+}
 			.menu ul li:hover{background:#f80759;}
+			.menu ul li:hover ul{display:block;}
+			.menu ul li li:hover{background:blue;}
 /* 가산토건 메인화면 관려  */
 			.image{
-				position:relative;
+				
 				margin:auto;
 				padding:50px 0px 0px 0px;
+				position:relative;
 				
 				
 }
@@ -45,11 +55,13 @@
 			.sub_title_box{
 				padding:60px 0 50px 0;
 				text-align:center;
-			}
-/* 	공사현황 관련				 */
-			.section1{
+				background-color:skyblue;
 				position:relative;
-				margin:auto;
-				padding:60px 0 50px 0;
-				text-align:center;
-			}		
+			}
+/* 로그인 관련 */
+			legend{text-align:center;}
+
+			section{
+				margin-top:50px;
+				width:70%;
+					}
